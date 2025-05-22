@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AnyGame - Download Apps & Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>AnyGame</h2>
+      <input type="text" id="searchBox" placeholder="Search by name..." />
+      <nav class="category-menu">
+        <button data-category="all" class="active">All</button>
+        <button data-category="game">Game</button>
+        <button data-category="software">Software/App</button>
+        <button data-category="os">OS</button>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <h1>Download Apps & Games</h1>
+      <div id="gamesList" class="games-list"></div>
+    </main>
+  </div>
+  <script src="gamesData.js"></script>
+  <script src="softwareData.js"></script>
+  <script src="osData.js"></script>
+  <script src="main-logic.js"></script>
+</body>
+</html>

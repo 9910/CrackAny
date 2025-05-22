@@ -1,0 +1,51 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+.category-menu button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.category-menu button.active {
+  background-color: #007bff;
+  color: white;
+}
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.game {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.game img {
+  max-width: 100%;
+  height: auto;
+}
+.download-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+}
